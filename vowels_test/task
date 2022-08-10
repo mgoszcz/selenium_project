@@ -14,18 +14,3 @@
 # 1pickOutVowels('Hello, today is Monday');
 #
 # 2// returns ['e', 'o', 'o', 'a', 'i', 'o', 'a']
-from typing import List
-
-VOWELS = ('a', 'e', 'i', 'o', 'u')
-
-
-def pick_out_vowels(text_string: str) -> List[str]:
-    result = []
-    if type(text_string) != str:
-        raise TypeError('Input argument must be a string')
-    for letter in text_string:
-        if letter.lower() in VOWELS:
-            result.append(letter)
-    return result
-
-print(pick_out_vowels('Hello, today is Monday'))

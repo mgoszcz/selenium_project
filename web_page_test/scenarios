@@ -1,0 +1,20 @@
+1. Happy path:
+    Use 3 user names and 'pwd' password to log in
+        personalized welcome messsage diplayed, log out button avilable, user name and password are still in inputs
+    log out
+        user logged out message displayed, log in button available, verify inputs are empty (default)
+    special characters and a very long string as a user name
+2. False tests
+    Both fields are empty
+        failed to log in message displayed, log in button is available, verify inputs are empty (default)
+    Use user name without password
+        failed to log in message displayed, log in button is available, verify inputs are empty (default)
+    Use password without user name
+        failed to log in message displayed, log in button is available, verify inputs are empty (default)
+    use user name with wrong password
+        special characters and a very long string as a user name
+        failed to log in message displayed, log in button is available, verify inputs are empty (default)
+3. Security
+    SQL injection - try to provide sql command in fields to break database - there is no backend so not need to be done
+4. Performance
+    1. Loading time (below 400 ms - dependent on requirements)
